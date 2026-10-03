@@ -1,0 +1,695 @@
+{
+  "task": "clinical",
+  "run_id": "clinical_formal_v1",
+  "freeze": {
+    "utc": "2026-09-15T13:21:41.806091+00:00",
+    "source_sha256": "300663e0e97ad8880bedcdd7d66179ce7772a9d26224f375927638c6aba40c78",
+    "families": [
+      "clean",
+      "benign_order",
+      "benign_comment",
+      "scope_target",
+      "scope_unit",
+      "transform_shift",
+      "coefficient_shift",
+      "reference_mismatch",
+      "joint_stale",
+      "remote_tail"
+    ],
+    "magnitudes": [
+      0.05,
+      0.2,
+      1.0
+    ],
+    "probe_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "arms": [
+      "B0_schema",
+      "B1_conventional",
+      "B2_no_binding",
+      "Full",
+      "minus_scope",
+      "minus_transform",
+      "minus_replay",
+      "minus_dependency"
+    ],
+    "same_base_predictor": true,
+    "labels_accessible_to_auditor": false
+  },
+  "aggregates": [
+    {
+      "arm": "B0_schema",
+      "family": "clean",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.024701934307813644
+    },
+    {
+      "arm": "B0_schema",
+      "family": "benign_order",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.02366490662097931
+    },
+    {
+      "arm": "B0_schema",
+      "family": "benign_comment",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.02347235567867756
+    },
+    {
+      "arm": "B0_schema",
+      "family": "scope_target",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 0,
+      "median_ms": 0.0233394093811512
+    },
+    {
+      "arm": "B0_schema",
+      "family": "scope_unit",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 0,
+      "median_ms": 0.023442553356289864
+    },
+    {
+      "arm": "B0_schema",
+      "family": "transform_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 0,
+      "median_ms": 0.02342485822737217
+    },
+    {
+      "arm": "B0_schema",
+      "family": "coefficient_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 0,
+      "median_ms": 0.0235140323638916
+    },
+    {
+      "arm": "B0_schema",
+      "family": "reference_mismatch",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 0,
+      "median_ms": 0.02338876947760582
+    },
+    {
+      "arm": "B0_schema",
+      "family": "joint_stale",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 0,
+      "median_ms": 0.024769920855760574
+    },
+    {
+      "arm": "B0_schema",
+      "family": "remote_tail",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 0,
+      "median_ms": 0.024011824280023575
+    },
+    {
+      "arm": "B1_conventional",
+      "family": "clean",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.12035365216434002
+    },
+    {
+      "arm": "B1_conventional",
+      "family": "benign_order",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.12016086839139462
+    },
+    {
+      "arm": "B1_conventional",
+      "family": "benign_comment",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.11962931603193283
+    },
+    {
+      "arm": "B1_conventional",
+      "family": "scope_target",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.11960347183048725
+    },
+    {
+      "arm": "B1_conventional",
+      "family": "scope_unit",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.11961697600781918
+    },
+    {
+      "arm": "B1_conventional",
+      "family": "transform_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.12034736573696136
+    },
+    {
+      "arm": "B1_conventional",
+      "family": "coefficient_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.11990126222372055
+    },
+    {
+      "arm": "B1_conventional",
+      "family": "reference_mismatch",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.11965958401560783
+    },
+    {
+      "arm": "B1_conventional",
+      "family": "joint_stale",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.12211105786263943
+    },
+    {
+      "arm": "B1_conventional",
+      "family": "remote_tail",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.125205609947443
+    },
+    {
+      "arm": "B2_no_binding",
+      "family": "clean",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.10492769069969654
+    },
+    {
+      "arm": "B2_no_binding",
+      "family": "benign_order",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.10362244211137295
+    },
+    {
+      "arm": "B2_no_binding",
+      "family": "benign_comment",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.1032496802508831
+    },
+    {
+      "arm": "B2_no_binding",
+      "family": "scope_target",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.10332698002457619
+    },
+    {
+      "arm": "B2_no_binding",
+      "family": "scope_unit",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.1032375730574131
+    },
+    {
+      "arm": "B2_no_binding",
+      "family": "transform_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.10346691124141216
+    },
+    {
+      "arm": "B2_no_binding",
+      "family": "coefficient_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.10348530486226082
+    },
+    {
+      "arm": "B2_no_binding",
+      "family": "reference_mismatch",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 0,
+      "median_ms": 0.10330509394407272
+    },
+    {
+      "arm": "B2_no_binding",
+      "family": "joint_stale",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.10312139056622982
+    },
+    {
+      "arm": "B2_no_binding",
+      "family": "remote_tail",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.09696302004158497
+    },
+    {
+      "arm": "Full",
+      "family": "clean",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.13815099373459816
+    },
+    {
+      "arm": "Full",
+      "family": "benign_order",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.1374674029648304
+    },
+    {
+      "arm": "Full",
+      "family": "benign_comment",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.1370050013065338
+    },
+    {
+      "arm": "Full",
+      "family": "scope_target",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.13718334957957268
+    },
+    {
+      "arm": "Full",
+      "family": "scope_unit",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.1369297970086336
+    },
+    {
+      "arm": "Full",
+      "family": "transform_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.1376485452055931
+    },
+    {
+      "arm": "Full",
+      "family": "coefficient_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.13712258078157902
+    },
+    {
+      "arm": "Full",
+      "family": "reference_mismatch",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.10086852125823498
+    },
+    {
+      "arm": "Full",
+      "family": "joint_stale",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.10073976591229439
+    },
+    {
+      "arm": "Full",
+      "family": "remote_tail",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.13261660933494568
+    },
+    {
+      "arm": "minus_scope",
+      "family": "clean",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.14033610932528973
+    },
+    {
+      "arm": "minus_scope",
+      "family": "benign_order",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.1394590362906456
+    },
+    {
+      "arm": "minus_scope",
+      "family": "benign_comment",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.13947300612926483
+    },
+    {
+      "arm": "minus_scope",
+      "family": "scope_target",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 0,
+      "median_ms": 0.13965647667646408
+    },
+    {
+      "arm": "minus_scope",
+      "family": "scope_unit",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 0,
+      "median_ms": 0.13918778859078884
+    },
+    {
+      "arm": "minus_scope",
+      "family": "transform_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.13967067934572697
+    },
+    {
+      "arm": "minus_scope",
+      "family": "coefficient_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.1394590362906456
+    },
+    {
+      "arm": "minus_scope",
+      "family": "reference_mismatch",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.09998842142522335
+    },
+    {
+      "arm": "minus_scope",
+      "family": "joint_stale",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.0997534953057766
+    },
+    {
+      "arm": "minus_scope",
+      "family": "remote_tail",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.13451254926621914
+    },
+    {
+      "arm": "minus_transform",
+      "family": "clean",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.11931546032428741
+    },
+    {
+      "arm": "minus_transform",
+      "family": "benign_order",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.11904817074537277
+    },
+    {
+      "arm": "minus_transform",
+      "family": "benign_comment",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.11902232654392719
+    },
+    {
+      "arm": "minus_transform",
+      "family": "scope_target",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.11908938176929951
+    },
+    {
+      "arm": "minus_transform",
+      "family": "scope_unit",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.11895829811692238
+    },
+    {
+      "arm": "minus_transform",
+      "family": "transform_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.11930987238883972
+    },
+    {
+      "arm": "minus_transform",
+      "family": "coefficient_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.11911988258361816
+    },
+    {
+      "arm": "minus_transform",
+      "family": "reference_mismatch",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.08067884482443333
+    },
+    {
+      "arm": "minus_transform",
+      "family": "joint_stale",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.08067651651799679
+    },
+    {
+      "arm": "minus_transform",
+      "family": "remote_tail",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.1219890546053648
+    },
+    {
+      "arm": "minus_replay",
+      "family": "clean",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.07779709994792938
+    },
+    {
+      "arm": "minus_replay",
+      "family": "benign_order",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.07758499123156071
+    },
+    {
+      "arm": "minus_replay",
+      "family": "benign_comment",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.07788254879415035
+    },
+    {
+      "arm": "minus_replay",
+      "family": "scope_target",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.07763737812638283
+    },
+    {
+      "arm": "minus_replay",
+      "family": "scope_unit",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.07773912511765957
+    },
+    {
+      "arm": "minus_replay",
+      "family": "transform_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.07774378173053265
+    },
+    {
+      "arm": "minus_replay",
+      "family": "coefficient_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.07779151201248169
+    },
+    {
+      "arm": "minus_replay",
+      "family": "reference_mismatch",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.040029408410191536
+    },
+    {
+      "arm": "minus_replay",
+      "family": "joint_stale",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.03980332985520363
+    },
+    {
+      "arm": "minus_replay",
+      "family": "remote_tail",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.07038284093141556
+    },
+    {
+      "arm": "minus_dependency",
+      "family": "clean",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.10321754962205887
+    },
+    {
+      "arm": "minus_dependency",
+      "family": "benign_order",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.10309694334864616
+    },
+    {
+      "arm": "minus_dependency",
+      "family": "benign_comment",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.10299845598638058
+    },
+    {
+      "arm": "minus_dependency",
+      "family": "scope_target",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.10288623161613941
+    },
+    {
+      "arm": "minus_dependency",
+      "family": "scope_unit",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.10325387120246887
+    },
+    {
+      "arm": "minus_dependency",
+      "family": "transform_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.10310159996151924
+    },
+    {
+      "arm": "minus_dependency",
+      "family": "coefficient_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.10293559171259403
+    },
+    {
+      "arm": "minus_dependency",
+      "family": "reference_mismatch",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 0,
+      "median_ms": 0.0988934189081192
+    },
+    {
+      "arm": "minus_dependency",
+      "family": "joint_stale",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.09849248453974724
+    },
+    {
+      "arm": "minus_dependency",
+      "family": "remote_tail",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.09632296860218048
+    }
+  ],
+  "n_bundles": 900,
+  "n_checks": 7200,
+  "interpretation": "All bundles are controlled engineering challenges; repeats share models and often identical mutations. Rates are finite-case summaries, not independent-trial confidence estimates. Content hashes assume a retained trusted reference, not external authentication. B1 is intentionally strong and may match Full.",
+  "all_clean_predictions_unchanged": true
+}

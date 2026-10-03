@@ -1,0 +1,49 @@
+{
+  "all_icu_stays": 200859,
+  "first_icu_per_admission": 166355,
+  "adult_first_stays": 165795,
+  "eligible_admissions": 114886,
+  "one_eligible_admission_per_patient": 99441,
+  "strict": {
+    "rows": 99441,
+    "patients": 99441,
+    "hospitals": 207,
+    "deaths": 9278,
+    "event_prevalence": 0.09330155569634256,
+    "missing_fraction": {
+      "age": 0.0,
+      "female": 0.0002312929274645267,
+      "creatinine": 0.09057632163795618,
+      "glucose": 0.09523234882995947,
+      "potassium": 0.08246095674822257,
+      "sodium": 0.08917850785893143,
+      "bicarbonate": 0.1413501473235386,
+      "hemoglobin": 0.1094317233334339,
+      "platelets": 0.12583340875494012,
+      "wbc": 0.11801973029233415
+    },
+    "retained_lab_rows": 1226242
+  },
+  "measurement_only": {
+    "rows": 99441,
+    "patients": 99441,
+    "hospitals": 207,
+    "deaths": 9278,
+    "event_prevalence": 0.09330155569634256,
+    "missing_fraction": {
+      "age": 0.0,
+      "female": 0.0002312929274645267,
+      "creatinine": 0.08129443589666234,
+      "glucose": 0.08709687151175069,
+      "potassium": 0.07518025764020876,
+      "sodium": 0.0812441548254744,
+      "bicarbonate": 0.13377781800263472,
+      "hemoglobin": 0.10286501543628886,
+      "platelets": 0.11912591385846884,
+      "wbc": 0.11116139218229905
+    },
+    "retained_lab_rows": 1252591
+  },
+  "unknown_unit_counts": {},
+  "source": "eicu"
+}

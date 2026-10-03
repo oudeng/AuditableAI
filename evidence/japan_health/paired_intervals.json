@@ -1,0 +1,62 @@
+[
+  {
+    "comparator": "persistence",
+    "gate_minus_comparator_mae_pp": 0.4819797967587789,
+    "prefecture_block_95pct": [
+      0.4398064717838398,
+      0.5205079552666524
+    ],
+    "region_block_95pct": [
+      0.41317367779169706,
+      0.5475119077142293
+    ]
+  },
+  {
+    "comparator": "trend",
+    "gate_minus_comparator_mae_pp": 0.5109621279042234,
+    "prefecture_block_95pct": [
+      0.46454122876352694,
+      0.5540951828536804
+    ],
+    "region_block_95pct": [
+      0.43606593132974963,
+      0.5803597651746916
+    ]
+  },
+  {
+    "comparator": "linear",
+    "gate_minus_comparator_mae_pp": -0.015754381988943442,
+    "prefecture_block_95pct": [
+      -0.04775728026809084,
+      0.013685260394619135
+    ],
+    "region_block_95pct": [
+      -0.0791096082826581,
+      0.03668280837185219
+    ]
+  },
+  {
+    "comparator": "gam",
+    "gate_minus_comparator_mae_pp": -0.005409238748703282,
+    "prefecture_block_95pct": [
+      -0.009357417756233081,
+      -0.0011564165728896608
+    ],
+    "region_block_95pct": [
+      -0.011808528454621495,
+      0.0004798543456522223
+    ]
+  },
+  {
+    "comparator": "hgb",
+    "gate_minus_comparator_mae_pp": -0.04194954214741208,
+    "prefecture_block_95pct": [
+      -0.06527965715259434,
+      -0.022533315970046493
+    ],
+    "region_block_95pct": [
+      -0.06880126385444503,
+      -0.018020148266775407
+    ]
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "application": "japan",
+  "status": "PASS",
+  "absolute_tolerance": 1e-09,
+  "relative_tolerance": 0,
+  "selected_configurations": "exactly matched",
+  "exclusions": [
+    "timings",
+    "timestamps",
+    "source hashes after porting",
+    "pickle bytes"
+  ],
+  "checks": {
+    "metrics.csv": {
+      "numeric_values": 240,
+      "max_absolute_difference": 0.0
+    },
+    "paired_intervals.json": {
+      "numeric_values": 25,
+      "max_absolute_difference": 0.0
+    },
+    "selection.json": {
+      "numeric_values": 200,
+      "max_absolute_difference": 0.0
+    },
+    "spatial_selection.json": {
+      "numeric_values": 1400,
+      "max_absolute_difference": 0.0
+    },
+    "run_summary": {
+      "numeric_values": 27,
+      "max_absolute_difference": 0.0
+    },
+    "yearly_model_metrics.csv": {
+      "numeric_values": 144,
+      "max_absolute_difference": 0.0
+    },
+    "gate_yearly_decomposition.csv": {
+      "numeric_values": 126,
+      "max_absolute_difference": 0.0
+    },
+    "delta_gate_activity.csv": {
+      "numeric_values": 90,
+      "max_absolute_difference": 0.0
+    },
+    "diagnostic_summary.json": {
+      "numeric_values": 36,
+      "max_absolute_difference": 0.0
+    }
+  }
+}

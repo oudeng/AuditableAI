@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Cite this software and the dissertation; also cite the supporting study and source datasets appropriate to your analysis. Version 1.0.0rc1 is a release candidate without an archival DOI."
+type: software
+title: "AuditableAI: Reproducible Evidence for Auditable AI in Human Sciences"
+version: 1.0.0rc1
+repository-code: "https://github.com/oudeng/AuditableAI"
+url: "https://github.com/oudeng/AuditableAI"
+authors:
+  - family-names: Deng
+    given-names: Ou
+    affiliation: "Graduate School of Human Sciences, Waseda University"
+license: MIT
+abstract: "Code for a claim-centered theoretical framework, inspectable additive-gate models, clinical and NHANES applications, Japanese regional-health forecasting, and dissertation evidence reproduction."
+keywords:
+  - auditable AI
+  - human sciences
+  - reproducibility
+  - health data
+  - scientific claims

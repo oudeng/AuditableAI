@@ -1,0 +1,18 @@
+{
+  "version": "phase4c-examples-v1",
+  "status": "new exploratory explanatory analyses after reviewing Phase4B; no new confirmatory validation or model selection",
+  "model_seed": 6201,
+  "models": "retained Phase4B gate fits; no retraining or tuning",
+  "candidate_pool": [
+    {"id":"C01","question":"Was the information available when the prediction was meant to be made?","source":"frozen Phase4B strict versus measurement-only comparison"},
+    {"id":"C02","question":"Did the model improve, or were harder cases removed from the denominator?","analysis":"clinical gate; keep predictions below the 70th percentile of development validation predictions; freeze threshold before external subset scoring; compare all external patients with this subset; report coverage and all-person result together"},
+    {"id":"C03","question":"Does the same measurement still mean the same number after changing units?","analysis":"NHANES frozen gate; convert waist from cm to mm by multiplying observed values by10; compare unchanged input, mismatched model input and correctly normalized input; preserve missingness and report all rows; no result-dependent factor search"},
+    {"id":"C04","question":"Which meaning of better was used?","source":"frozen Phase4B NHANES RMSE/MAE ordering; no new selection"},
+    {"id":"C05","question":"Does this result belong to the claimed model version?","source":"frozen Phase4B reference_mismatch audit family"},
+    {"id":"C06","question":"Can an artifact checker know that an input unit declaration is false?","analysis":"same waist conversion as C03, but metadata falsely remains cm; unchanged retained export/registered reference/fixed validation probes; assess existing Full auditor without giving it scoring truth or adding new checks"}
+  ],
+  "unit_test_controls": "label-independent declared-unit comparison; true mm metadata requires explicit conversion; benign conversion plus correct normalization must replay the original predictions; silent wrong metadata is a negative boundary, not secretly given to the auditor",
+  "selection_rubric": ["one-sentence comprehensibility without medical expertise", "general human-sciences relevance", "distinct audit dependency", "traceable data/controls", "honest bounded interpretation"],
+  "selection_rule": "select up to3 main illustrations for communication, not by effect magnitude or p-value; retain all six candidate records and outcomes; retain at most2 representative negative/counterexample illustrations in the dissertation",
+  "privacy": "patient and participant rows remain in the local working directory; export aggregates and content fingerprints only"
+}

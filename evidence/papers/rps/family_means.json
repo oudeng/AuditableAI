@@ -1,0 +1,79 @@
+{
+  "source_doi": "10.1038/s41598-026-55417-9",
+  "locator": "accepted manuscript Table type_summary",
+  "source_sha256": "2dc3af752a2c0620808ed3ba8903a122d1ca0cc650644bd66b7390a90101dabf",
+  "values": [
+    {
+      "family": "RNN_v2",
+      "mean_score": 7955.5
+    },
+    {
+      "family": "LSTM_v1",
+      "mean_score": 5186.6
+    },
+    {
+      "family": "A3C_v2",
+      "mean_score": 3837.5
+    },
+    {
+      "family": "A3C_v1",
+      "mean_score": 3380.9
+    },
+    {
+      "family": "LSTM_v2",
+      "mean_score": 2716.1
+    },
+    {
+      "family": "MSA_v2",
+      "mean_score": 2410.7
+    },
+    {
+      "family": "M_v1",
+      "mean_score": 1786.1
+    },
+    {
+      "family": "Tr_v1",
+      "mean_score": 1386.9
+    },
+    {
+      "family": "B_v2",
+      "mean_score": 1145.2
+    },
+    {
+      "family": "M_v2",
+      "mean_score": 1042.8
+    },
+    {
+      "family": "B_v1",
+      "mean_score": 270.7
+    },
+    {
+      "family": "R",
+      "mean_score": -8.4
+    },
+    {
+      "family": "Tr_v2",
+      "mean_score": -98.4
+    },
+    {
+      "family": "CG",
+      "mean_score": -240.0
+    },
+    {
+      "family": "WL",
+      "mean_score": -742.3
+    },
+    {
+      "family": "SVM",
+      "mean_score": -888.3
+    },
+    {
+      "family": "RF",
+      "mean_score": -10092.5
+    },
+    {
+      "family": "XGB",
+      "mean_score": -19049.1
+    }
+  ]
+}

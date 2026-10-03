@@ -1,0 +1,95 @@
+{
+  "status": "new exploratory explanatory analyses after reviewing Phase4B; no new confirmatory validation or model selection",
+  "seed": 6201,
+  "cohort_subset": {
+    "cutoff": 0.12402541518810614,
+    "rows": [
+      {
+        "group": "all",
+        "n": 99441,
+        "coverage": 1.0,
+        "events": 9278,
+        "event_prevalence": 0.09330155569634256,
+        "brier": 0.08057967216807739,
+        "mean_prediction": 0.1235917174251807
+      },
+      {
+        "group": "retained",
+        "n": 66286,
+        "coverage": 0.666586216952766,
+        "events": 3281,
+        "event_prevalence": 0.049497631475726396,
+        "brier": 0.04665290830293283,
+        "mean_prediction": 0.06409192496848343
+      },
+      {
+        "group": "not_retained",
+        "n": 33155,
+        "coverage": 0.333413783047234,
+        "events": 5997,
+        "event_prevalence": 0.18087769567184436,
+        "brier": 0.148408641239559,
+        "mean_prediction": 0.24254823206202683
+      }
+    ],
+    "interpretation": "Changing the evaluated population changes the estimand; lower subset loss is not an all-person improvement."
+  },
+  "unit_conversion": {
+    "feature": "waist circumference",
+    "valid_identity": "90 cm = 900 mm (arithmetic illustration, not a patient record)",
+    "rows": [
+      {
+        "case": "original_cm",
+        "n": 5261,
+        "declared_input_unit": "cm",
+        "declared_unit_mismatch": false,
+        "retained_artifact_audit_findings": [],
+        "rmse": 1.0052599285929706,
+        "mae": 0.5888263928256546,
+        "mean_abs_prediction_change": 0.0,
+        "max_abs_prediction_change": 0.0
+      },
+      {
+        "case": "mm_without_conversion",
+        "n": 5261,
+        "declared_input_unit": "mm",
+        "declared_unit_mismatch": true,
+        "retained_artifact_audit_findings": [],
+        "rmse": 1.1033504004222978,
+        "mae": 0.8370129135406265,
+        "mean_abs_prediction_change": 0.45826371712610237,
+        "max_abs_prediction_change": 0.5829416118749817
+      },
+      {
+        "case": "mm_correctly_converted",
+        "n": 5261,
+        "declared_input_unit": "cm",
+        "declared_unit_mismatch": false,
+        "retained_artifact_audit_findings": [],
+        "rmse": 1.0052599285929706,
+        "mae": 0.5888263928256546,
+        "mean_abs_prediction_change": 0.0,
+        "max_abs_prediction_change": 0.0
+      },
+      {
+        "case": "silent_mm_declared_cm",
+        "n": 5261,
+        "declared_input_unit": "cm",
+        "declared_unit_mismatch": false,
+        "retained_artifact_audit_findings": [],
+        "rmse": 1.1033504004222978,
+        "mae": 0.8370129135406265,
+        "mean_abs_prediction_change": 0.45826371712610237,
+        "max_abs_prediction_change": 0.5829416118749817
+      }
+    ],
+    "interpretation": "Declared unit comparison can trigger normalization. A retained model/probe audit cannot authenticate a false unit label on a new input batch; no hidden fault identity was passed to Full."
+  },
+  "checks": {
+    "clinical_prediction_matches_phase4b": true,
+    "subset_weighted_decomposition": true,
+    "correct_unit_conversion_replays_host": true,
+    "no_refitting": true
+  },
+  "restricted_rows_exported": false
+}

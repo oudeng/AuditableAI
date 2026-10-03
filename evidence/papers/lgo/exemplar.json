@@ -1,0 +1,14 @@
+{
+  "source_doi": "10.1016/j.isci.2026.117092",
+  "source_sha256": "b56a64a4f77fe847a93d9f347338435eb8edd0a91efeb6a03a691f0254607825",
+  "locator": "eq:eicu-exemplar",
+  "GCS": {
+    "slope": 1.313,
+    "midpoint": 0.5767
+  },
+  "RR": {
+    "slope": 3.9457,
+    "midpoint": -1.4398
+  },
+  "scope": "Published standardized components; no clinical model weights or natural-unit thresholds."
+}

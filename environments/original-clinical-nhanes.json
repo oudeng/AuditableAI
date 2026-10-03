@@ -1,0 +1,12 @@
+{
+  "python": "3.10.19",
+  "libraries": {
+    "numpy": "2.2.5",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3",
+    "sklearn": "1.7.2",
+    "matplotlib": "3.10.7",
+    "seaborn": "0.13.2"
+  },
+  "note": "Original clinical/NHANES environment record; PyTorch/GPU not used by these tabular application scripts."
+}

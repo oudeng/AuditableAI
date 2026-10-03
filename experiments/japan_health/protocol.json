@@ -1,0 +1,129 @@
+{
+  "id": "E-JP-v1",
+  "frozen_date": "2026-09-16",
+  "scope": "Retrospective next-release regional indicator forecast; not real-time surveillance, individual prediction, causal inference or a fully vintage-correct historical simulation.",
+  "outcome": "Proportion meeting waist >=85 cm male or >=90 cm female, among recorded waist examinees aged 40–74 at fiscal year end.",
+  "years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "train_targets_initial": [
+    2017,
+    2018,
+    2019
+  ],
+  "validation_targets": [
+    2020,
+    2021
+  ],
+  "final_train_targets": [
+    2017,
+    2018,
+    2019,
+    2020,
+    2021
+  ],
+  "test_targets": [
+    2022,
+    2023
+  ],
+  "validation": "Rolling fit on targets before each validation year. Equal average MAE of prefecture-sex standardized rates. First candidate wins exact ties. Refit through 2021; same final model for 2022 and 2023.",
+  "features": [
+    "age (lower bound of five-year band)",
+    "male indicator",
+    "lag1 same-cell proportion",
+    "delta = lag1 minus lag2"
+  ],
+  "feature_decision": "Use minimal waist-history feature set for all models. No optional BMI/SBP features in this confirmatory comparison; future expanded studies require new version.",
+  "models": "Persistence; logit trend damped by .25,.5,1; standardized ridge alpha logspace(-4,4,9); additive cubic spline knots 3,5,7 x ridge .1,1,10; HGB learning_rate .03,.1,.2 x leaves 7,15,31, 150 iterations, L2=1; gate slope .5,1,2 x ridge .1,1,10. Four learned families predict logit(rate)-logit(lag1); final expit(logit(lag1)+change). Squared loss, equal stratum fitting weights. No prefecture ID or year features.",
+  "primary_metric": "MAE in percentage points of fixed-sex-specific age-standardized prefectural rates, equally weighted across 47 prefectures, two sexes, two test years.",
+  "age_reference": "2020 Census table 2-7 Excel (database equivalent 2-7-1); national, all nationalities including unknown nationality; known ages 40–74; sexes separately; published 2021-11-30. Census is reference weights, not denominator.",
+  "weight_sensitivity": "Fixed pooled FY2019 NDB waist examinee weights; no retuning.",
+  "spatial_groups": {
+    "hokkaido_tohoku": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "kanto": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "chubu": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "kinki": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "chugoku": [
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "shikoku": [
+      36,
+      37,
+      38,
+      39
+    ],
+    "kyushu_okinawa": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+    ]
+  },
+  "spatial_rule": "Each region excluded from all training AND validation scoring for its models. Use its lagged observed rates at prediction. No region identity feature. Seven folds are correlated tests, not seven independent studies.",
+  "uncertainty": "10000 paired prefecture-block resamples, keep both sexes and years together, seed916. Unadjusted 95% descriptive conditional intervals. Seven-region block sensitivity. No claim of sampling variance of Japanese population, no binomial tests based on examinee counts.",
+  "primary_case": "Tokyo (pref13), specified before fitting due to Waseda context, report both test years and both sexes regardless of performance.",
+  "system_comparison": {
+    "B1": "Same raw sources, models, weights, configuration, processing code and manifests, conventionally reproducible files.",
+    "Full": "Same contents plus per-claim structured dependency records and direct source-cell links. Same predictions required.",
+    "tasks": [
+      "T1 recover denominator and sex-specific numerator for all 188 reported rates",
+      "T2 recover data year, publication release and age/sex scope",
+      "T3 regenerate census-standardized reported rates",
+      "T4 replay same fitted gate expression for 1316 test strata",
+      "T5 trace displayed result to workbook, sheet and source cells",
+      "T6 change to fixed FY2019 age reference and regenerate all 188 rates"
+    ],
+    "scoring": "Executable success only when numerical answers agree with separately implemented raw-workbook oracle (counts exact; proportions <=1e-10). Same source/compute access. Runtime descriptive; no user study or claimed manual time savings. No artificial fault injection. All tasks retained, including ties."
+  },
+  "publication_status": "Internal frozen protocol; public test schemas and some raw cells already inspected. Not registered externally. Intended future journal contribution: temporal/spatial forecasting and verifiable reporting; age standardization and NDB geography already studied."
+}

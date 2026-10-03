@@ -1,0 +1,695 @@
+{
+  "task": "nhanes",
+  "run_id": "nhanes_formal_v1",
+  "freeze": {
+    "utc": "2026-09-15T13:21:41.801372+00:00",
+    "source_sha256": "300663e0e97ad8880bedcdd7d66179ce7772a9d26224f375927638c6aba40c78",
+    "families": [
+      "clean",
+      "benign_order",
+      "benign_comment",
+      "scope_target",
+      "scope_unit",
+      "transform_shift",
+      "coefficient_shift",
+      "reference_mismatch",
+      "joint_stale",
+      "remote_tail"
+    ],
+    "magnitudes": [
+      0.05,
+      0.2,
+      1.0
+    ],
+    "probe_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "arms": [
+      "B0_schema",
+      "B1_conventional",
+      "B2_no_binding",
+      "Full",
+      "minus_scope",
+      "minus_transform",
+      "minus_replay",
+      "minus_dependency"
+    ],
+    "same_base_predictor": true,
+    "labels_accessible_to_auditor": false
+  },
+  "aggregates": [
+    {
+      "arm": "B0_schema",
+      "family": "clean",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.020113307982683182
+    },
+    {
+      "arm": "B0_schema",
+      "family": "benign_order",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.019068829715251923
+    },
+    {
+      "arm": "B0_schema",
+      "family": "benign_comment",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.01880084164440632
+    },
+    {
+      "arm": "B0_schema",
+      "family": "scope_target",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 0,
+      "median_ms": 0.01879199407994747
+    },
+    {
+      "arm": "B0_schema",
+      "family": "scope_unit",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 0,
+      "median_ms": 0.01871678978204727
+    },
+    {
+      "arm": "B0_schema",
+      "family": "transform_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 0,
+      "median_ms": 0.018886057659983635
+    },
+    {
+      "arm": "B0_schema",
+      "family": "coefficient_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 0,
+      "median_ms": 0.018765218555927277
+    },
+    {
+      "arm": "B0_schema",
+      "family": "reference_mismatch",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 0,
+      "median_ms": 0.01872330904006958
+    },
+    {
+      "arm": "B0_schema",
+      "family": "joint_stale",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 0,
+      "median_ms": 0.02037500962615013
+    },
+    {
+      "arm": "B0_schema",
+      "family": "remote_tail",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 0,
+      "median_ms": 0.01950794830918312
+    },
+    {
+      "arm": "B1_conventional",
+      "family": "clean",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.07163546979427338
+    },
+    {
+      "arm": "B1_conventional",
+      "family": "benign_order",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.07174722850322723
+    },
+    {
+      "arm": "B1_conventional",
+      "family": "benign_comment",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.07089856080710888
+    },
+    {
+      "arm": "B1_conventional",
+      "family": "scope_target",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.07140426896512508
+    },
+    {
+      "arm": "B1_conventional",
+      "family": "scope_unit",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.07128901779651642
+    },
+    {
+      "arm": "B1_conventional",
+      "family": "transform_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.07183291018009186
+    },
+    {
+      "arm": "B1_conventional",
+      "family": "coefficient_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.07148878648877144
+    },
+    {
+      "arm": "B1_conventional",
+      "family": "reference_mismatch",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.07121101953089237
+    },
+    {
+      "arm": "B1_conventional",
+      "family": "joint_stale",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.07156538777053356
+    },
+    {
+      "arm": "B1_conventional",
+      "family": "remote_tail",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.07543293759226799
+    },
+    {
+      "arm": "B2_no_binding",
+      "family": "clean",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.06633042357861996
+    },
+    {
+      "arm": "B2_no_binding",
+      "family": "benign_order",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.06510992534458637
+    },
+    {
+      "arm": "B2_no_binding",
+      "family": "benign_comment",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.06456021219491959
+    },
+    {
+      "arm": "B2_no_binding",
+      "family": "scope_target",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.06473902612924576
+    },
+    {
+      "arm": "B2_no_binding",
+      "family": "scope_unit",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.0646484550088644
+    },
+    {
+      "arm": "B2_no_binding",
+      "family": "transform_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.06485497578978539
+    },
+    {
+      "arm": "B2_no_binding",
+      "family": "coefficient_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.06475928239524364
+    },
+    {
+      "arm": "B2_no_binding",
+      "family": "reference_mismatch",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 0,
+      "median_ms": 0.06469059735536575
+    },
+    {
+      "arm": "B2_no_binding",
+      "family": "joint_stale",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.06494950503110886
+    },
+    {
+      "arm": "B2_no_binding",
+      "family": "remote_tail",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.05826540291309357
+    },
+    {
+      "arm": "Full",
+      "family": "clean",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.08508213795721531
+    },
+    {
+      "arm": "Full",
+      "family": "benign_order",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.08346280083060265
+    },
+    {
+      "arm": "Full",
+      "family": "benign_comment",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.08326210081577301
+    },
+    {
+      "arm": "Full",
+      "family": "scope_target",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.08381064981222153
+    },
+    {
+      "arm": "Full",
+      "family": "scope_unit",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.0834478996694088
+    },
+    {
+      "arm": "Full",
+      "family": "transform_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.08391332812607288
+    },
+    {
+      "arm": "Full",
+      "family": "coefficient_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.08375593461096287
+    },
+    {
+      "arm": "Full",
+      "family": "reference_mismatch",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.06246590055525303
+    },
+    {
+      "arm": "Full",
+      "family": "joint_stale",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.06244122050702572
+    },
+    {
+      "arm": "Full",
+      "family": "remote_tail",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.07845810614526272
+    },
+    {
+      "arm": "minus_scope",
+      "family": "clean",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.08628610521554947
+    },
+    {
+      "arm": "minus_scope",
+      "family": "benign_order",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.0859205611050129
+    },
+    {
+      "arm": "minus_scope",
+      "family": "benign_comment",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.08542044088244438
+    },
+    {
+      "arm": "minus_scope",
+      "family": "scope_target",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 0,
+      "median_ms": 0.08571380749344826
+    },
+    {
+      "arm": "minus_scope",
+      "family": "scope_unit",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 0,
+      "median_ms": 0.08575920946896076
+    },
+    {
+      "arm": "minus_scope",
+      "family": "transform_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.08604535833001137
+    },
+    {
+      "arm": "minus_scope",
+      "family": "coefficient_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.08581997826695442
+    },
+    {
+      "arm": "minus_scope",
+      "family": "reference_mismatch",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.06164214573800564
+    },
+    {
+      "arm": "minus_scope",
+      "family": "joint_stale",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.061357393860816956
+    },
+    {
+      "arm": "minus_scope",
+      "family": "remote_tail",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.08002016693353653
+    },
+    {
+      "arm": "minus_transform",
+      "family": "clean",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.07069087587296963
+    },
+    {
+      "arm": "minus_transform",
+      "family": "benign_order",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.07062242366373539
+    },
+    {
+      "arm": "minus_transform",
+      "family": "benign_comment",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.0705057755112648
+    },
+    {
+      "arm": "minus_transform",
+      "family": "scope_target",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.07059169001877308
+    },
+    {
+      "arm": "minus_transform",
+      "family": "scope_unit",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.07063057273626328
+    },
+    {
+      "arm": "minus_transform",
+      "family": "transform_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.07104850374162197
+    },
+    {
+      "arm": "minus_transform",
+      "family": "coefficient_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.07044640369713306
+    },
+    {
+      "arm": "minus_transform",
+      "family": "reference_mismatch",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.04777987487614155
+    },
+    {
+      "arm": "minus_transform",
+      "family": "joint_stale",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.04763319157063961
+    },
+    {
+      "arm": "minus_transform",
+      "family": "remote_tail",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.0730985775589943
+    },
+    {
+      "arm": "minus_replay",
+      "family": "clean",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.05293404683470726
+    },
+    {
+      "arm": "minus_replay",
+      "family": "benign_order",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.0528581440448761
+    },
+    {
+      "arm": "minus_replay",
+      "family": "benign_comment",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.052688876166939735
+    },
+    {
+      "arm": "minus_replay",
+      "family": "scope_target",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.05270051769912243
+    },
+    {
+      "arm": "minus_replay",
+      "family": "scope_unit",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.0530327670276165
+    },
+    {
+      "arm": "minus_replay",
+      "family": "transform_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.053112395107746124
+    },
+    {
+      "arm": "minus_replay",
+      "family": "coefficient_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.05268258973956108
+    },
+    {
+      "arm": "minus_replay",
+      "family": "reference_mismatch",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.030349940061569214
+    },
+    {
+      "arm": "minus_replay",
+      "family": "joint_stale",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.030107097700238228
+    },
+    {
+      "arm": "minus_replay",
+      "family": "remote_tail",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.04524854011833668
+    },
+    {
+      "arm": "minus_dependency",
+      "family": "clean",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.06440794095396996
+    },
+    {
+      "arm": "minus_dependency",
+      "family": "benign_order",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.06453599780797958
+    },
+    {
+      "arm": "minus_dependency",
+      "family": "benign_comment",
+      "n": 90,
+      "invalid_truth": false,
+      "rejected": 0,
+      "median_ms": 0.0643350649625063
+    },
+    {
+      "arm": "minus_dependency",
+      "family": "scope_target",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.06439280696213245
+    },
+    {
+      "arm": "minus_dependency",
+      "family": "scope_unit",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.06451644003391266
+    },
+    {
+      "arm": "minus_dependency",
+      "family": "transform_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.06446149200201035
+    },
+    {
+      "arm": "minus_dependency",
+      "family": "coefficient_shift",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.06439909338951111
+    },
+    {
+      "arm": "minus_dependency",
+      "family": "reference_mismatch",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 0,
+      "median_ms": 0.060820020735263824
+    },
+    {
+      "arm": "minus_dependency",
+      "family": "joint_stale",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.06055482663214207
+    },
+    {
+      "arm": "minus_dependency",
+      "family": "remote_tail",
+      "n": 90,
+      "invalid_truth": true,
+      "rejected": 90,
+      "median_ms": 0.057889847084879875
+    }
+  ],
+  "n_bundles": 900,
+  "n_checks": 7200,
+  "interpretation": "All bundles are controlled engineering challenges; repeats share models and often identical mutations. Rates are finite-case summaries, not independent-trial confidence estimates. Content hashes assume a retained trusted reference, not external authentication. B1 is intentionally strong and may match Full.",
+  "all_clean_predictions_unchanged": true
+}

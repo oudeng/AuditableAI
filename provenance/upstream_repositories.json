@@ -1,0 +1,34 @@
+[
+  {
+    "study": "VERA",
+    "url": "https://github.com/oudeng/VERA",
+    "inspected_commit": "d5dd167bd8d2f4382c5ed03e7cc3043fe2fb75ce",
+    "inspected_date": "2026-10-04",
+    "license_api": "MIT",
+    "role": "External source-study implementation; not vendored or retrained by this repository"
+  },
+  {
+    "study": "CaST",
+    "url": "https://github.com/oudeng/CaST",
+    "inspected_commit": "82bc7a53e78e881ff70a7fcbe54972b294556979",
+    "inspected_date": "2026-10-04",
+    "license_api": "MIT",
+    "role": "External source-study implementation; not vendored or retrained by this repository"
+  },
+  {
+    "study": "RPS",
+    "url": "https://github.com/oudeng/RPS",
+    "inspected_commit": "72c91442540027754d791eaa237fbdc60f037165",
+    "inspected_date": "2026-10-04",
+    "license_api": null,
+    "role": "External source-study implementation; not vendored or retrained by this repository"
+  },
+  {
+    "study": "LGO",
+    "url": "https://github.com/oudeng/LGO",
+    "inspected_commit": "60e4c6e8e394cfa1b9bab3d2804f859bef4d526e",
+    "inspected_date": "2026-10-04",
+    "license_api": "MIT",
+    "role": "External source-study implementation; not vendored or retrained by this repository"
+  }
+]

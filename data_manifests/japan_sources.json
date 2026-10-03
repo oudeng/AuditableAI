@@ -1,0 +1,168 @@
+{
+  "snapshot": "thesis-v0.5 / E-JP-v1",
+  "original_retrieval_day": "2026-09-16 JST (study record; per-file exact times not recorded)",
+  "files": [
+    {
+      "name": "ndb3_waist.xlsx",
+      "group": "core",
+      "sha256": "f3f5baad250f9e2bb1409b1bc86ea41710bcd21a6e20039a868191d849e76351",
+      "bytes": 28733,
+      "kind": "download",
+      "url": "https://www.mhlw.go.jp/content/12400000/000347821.xlsx"
+    },
+    {
+      "name": "ndb4_waist.xlsx",
+      "group": "core",
+      "sha256": "b1e4d618df38eefdbea65470f7c551ad2fd9b30f3b5502ffcb2237ebad40a2b1",
+      "bytes": 28285,
+      "kind": "download",
+      "url": "https://www.mhlw.go.jp/content/12400000/000712009.xlsx"
+    },
+    {
+      "name": "ndb5_waist.xlsx",
+      "group": "core",
+      "sha256": "5417a184040ffe72f741aff664bdddde04258fe809073ee4040932c33568b91f",
+      "bytes": 49236,
+      "kind": "download",
+      "url": "https://www.mhlw.go.jp/content/12400000/000539835.xlsx"
+    },
+    {
+      "name": "ndb6_waist.xlsx",
+      "group": "core",
+      "sha256": "660399897e76f5112ea76f4fe4bd6ddf8efc6a9193220b862852cec9d28f8a5a",
+      "bytes": 28883,
+      "kind": "download",
+      "url": "https://www.mhlw.go.jp/content/12400000/000823431.xlsx"
+    },
+    {
+      "name": "ndb7_waist.xlsx",
+      "group": "core",
+      "sha256": "8ced07d9ab1403cfa7f782c325e3c28ab9eed1e31d299a532f194420898accfe",
+      "bytes": 27944,
+      "kind": "download",
+      "url": "https://www.mhlw.go.jp/content/12400000/001262447.xlsx"
+    },
+    {
+      "name": "ndb8_waist.xlsx",
+      "group": "core",
+      "sha256": "79c2f1e8e44bcdb74387ab8494d23443d67bf57ce769db12975fffeb2715f8c8",
+      "bytes": 38122,
+      "kind": "download",
+      "url": "https://www.mhlw.go.jp/content/12400000/001122903.xlsx"
+    },
+    {
+      "name": "ndb9_waist.xlsx",
+      "group": "core",
+      "sha256": "d6113ff580b0d668b347892aecfe6edde1882b9dff0060cffd7230b8f8a2ba26",
+      "bytes": 27668,
+      "kind": "download",
+      "url": "https://www.mhlw.go.jp/content/12400000/001258793.xlsx"
+    },
+    {
+      "name": "ndb10_waist.xlsx",
+      "group": "core",
+      "sha256": "cf87a0f09f7e0f5e101a704eee347bd6461c0ad6abd5fd1e0a503ff5c5c6fddd",
+      "bytes": 28735,
+      "kind": "download",
+      "url": "https://www.mhlw.go.jp/content/12400000/001495761.xlsx"
+    },
+    {
+      "name": "ndb11_waist.xlsx",
+      "group": "core",
+      "sha256": "cae8fb18316caf649c40dca6bc3d6c4a8af65aced483a3857ce98e9a664f7698",
+      "bytes": 28144,
+      "kind": "zip_member",
+      "archive": "ndb11_checkups.zip",
+      "member": "07_特定健診_検査項目/腹囲　都道府県別性年齢階級別分布.xlsx",
+      "url": "https://www.mhlw.go.jp/content/12400000/001711940.zip"
+    },
+    {
+      "name": "census2020_table2_7.xlsx",
+      "group": "core",
+      "sha256": "114f2343dfaaa048614b0283830070b2048cae7da67a38df96c83039c6d0ac75",
+      "bytes": 8535914,
+      "kind": "download",
+      "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000032142410&fileKind=0"
+    },
+    {
+      "name": "ndb11_checkups.zip",
+      "group": "core",
+      "sha256": "1b25ff94d1682297bf567a650c5f8d6d3930289ced1f5870edea15dc29465a8a",
+      "bytes": 8686611,
+      "kind": "download",
+      "url": "https://www.mhlw.go.jp/content/12400000/001711940.zip"
+    },
+    {
+      "name": "ndb3_guide.pdf",
+      "group": "guide",
+      "sha256": "17ed3f736bf6eae00fe87d40ef3474961789bf5b5ee802ebc9e42260cb0a363e",
+      "bytes": 1052226,
+      "kind": "download",
+      "url": "https://www.mhlw.go.jp/content/12400000/000346720.pdf"
+    },
+    {
+      "name": "ndb4_guide.pdf",
+      "group": "guide",
+      "sha256": "3edf614113d14be3660e1eb1830d1c151d1d8b4cb580b3a912de1bfa2889da94",
+      "bytes": 702067,
+      "kind": "download",
+      "url": "https://www.mhlw.go.jp/content/12400000/000711802.pdf"
+    },
+    {
+      "name": "ndb5_guide.pdf",
+      "group": "guide",
+      "sha256": "bb487b028e1721854da54cd520e741d72a38d4f4a63e120914b50b5671c698e3",
+      "bytes": 2552412,
+      "kind": "download",
+      "url": "https://www.mhlw.go.jp/content/12400000/000539646.pdf"
+    },
+    {
+      "name": "ndb6_guide.pdf",
+      "group": "guide",
+      "sha256": "08d70817fe34152212d3b51f5cf769ef34835083149d085cd3eb0ec4a19e2d02",
+      "bytes": 2585654,
+      "kind": "download",
+      "url": "https://www.mhlw.go.jp/content/12400000/000821378.pdf"
+    },
+    {
+      "name": "ndb7_guide.pdf",
+      "group": "guide",
+      "sha256": "bdb65ec41ff6f55cb94299b2f6d7be10c4ae0fae322a1c813fc4a082a2b8e787",
+      "bytes": 3353685,
+      "kind": "download",
+      "url": "https://www.mhlw.go.jp/content/12400000/001261557.pdf"
+    },
+    {
+      "name": "ndb8_guide.pdf",
+      "group": "guide",
+      "sha256": "988bd8b5bffb97151eb6c523aee04aff9a940e0c01a2c64d95ea011db1d1b3b7",
+      "bytes": 2008324,
+      "kind": "download",
+      "url": "https://www.mhlw.go.jp/content/12400000/001126115.pdf"
+    },
+    {
+      "name": "ndb9_guide.pdf",
+      "group": "guide",
+      "sha256": "a1ad8e53e526b985fa4b64cf467ffb7a21210a01f38575b3108cc23e32593d07",
+      "bytes": 2437201,
+      "kind": "download",
+      "url": "https://www.mhlw.go.jp/content/12400000/001258154.pdf"
+    },
+    {
+      "name": "ndb10_guide.pdf",
+      "group": "guide",
+      "sha256": "fe0532ba03388f6fd495e8662704083498040b174d85d6d747b2d1140c3f00b7",
+      "bytes": 2248901,
+      "kind": "download",
+      "url": "https://www.mhlw.go.jp/content/12400000/001492909.pdf"
+    },
+    {
+      "name": "ndb11_guide.pdf",
+      "group": "guide",
+      "sha256": "36b0af05b8db5e64c6a0c5b1b80bc3c4d9c7d3a648367c7622701459e6b7a323",
+      "bytes": 2060801,
+      "kind": "download",
+      "url": "https://www.mhlw.go.jp/content/12400000/001742571.pdf"
+    }
+  ]
+}

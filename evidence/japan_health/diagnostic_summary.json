@@ -1,0 +1,63 @@
+{
+  "analysis_status": "Post-hoc diagnosis triggered by internal review; no retuning or replacement of confirmatory comparisons.",
+  "replay_max_abs_error": 1.1102230246251565e-16,
+  "pooled_temporal": {
+    "persistence": {
+      "overpredicted": 143,
+      "n": 188,
+      "mae_pp": 0.21979608867559197,
+      "rmse_pp": 0.2861527037086382,
+      "bias_pp": 0.15492147164365294
+    },
+    "trend": {
+      "overpredicted": 132,
+      "n": 188,
+      "mae_pp": 0.19081375753014748,
+      "rmse_pp": 0.25514877761844307,
+      "bias_pp": 0.10443391680550776
+    },
+    "linear": {
+      "overpredicted": 188,
+      "n": 188,
+      "mae_pp": 0.7175302674233143,
+      "rmse_pp": 0.7906164041675597,
+      "bias_pp": 0.7175302674233143
+    },
+    "gam": {
+      "overpredicted": 186,
+      "n": 188,
+      "mae_pp": 0.7071851241830742,
+      "rmse_pp": 0.8053794856307238,
+      "bias_pp": 0.7065462276514771
+    },
+    "hgb": {
+      "overpredicted": 188,
+      "n": 188,
+      "mae_pp": 0.743725427581783,
+      "rmse_pp": 0.828560257676985,
+      "bias_pp": 0.743725427581783
+    },
+    "gate": {
+      "overpredicted": 187,
+      "n": 188,
+      "mae_pp": 0.7017758854343709,
+      "rmse_pp": 0.7989635443012778,
+      "bias_pp": 0.7010865983998602
+    }
+  },
+  "negative_input_fraction_training": 0.06322188449848025,
+  "negative_input_fraction_testing": 0.6633738601823708,
+  "mean_training_target_logit_change": 0.02820430254988666,
+  "mean_test_target_logit_change": -0.006919726592583127,
+  "exact_decomposition": "gate error = persistence error + sum of term increments; term increment = 100*weight*term*[expit(offset+f)-expit(offset)]/f, continuous extension at f=0.",
+  "attribution_boundary": "Fixed native-coordinate terms and a straight path from zero change; algebraic accounting, not unique or causal attribution.",
+  "low_activation_rule": "g < 0.1 is a descriptive diagnostic threshold, not proof of zero derivative or zero effect.",
+  "claim_records": 188,
+  "original_fields_preserved": [
+    "assertion",
+    "scope",
+    "artifact",
+    "reference",
+    "evidence"
+  ]
+}

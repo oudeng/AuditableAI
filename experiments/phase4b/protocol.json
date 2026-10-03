@@ -1,0 +1,52 @@
+{
+  "version": "phase4b-v1",
+  "status": "internal time-stamped analysis freeze before any formal model evaluation; not public preregistration",
+  "seeds": [6201, 6202, 6203],
+  "primary_seed": 6201,
+  "split": [0.6, 0.2, 0.2],
+  "bootstrap_replicates": 1000,
+  "clinical": {
+    "target": "hospital mortality after the 24-hour ICU landmark",
+    "scope": "adults still in their first ICU stay of a hospital admission at 24 hours; one hash-selected eligible admission per patient",
+    "eligibility": "age >=18; ICU outtime and hospital discharge after landmark; known hospital outcome; MIMIC death time, when present, after landmark",
+    "patient_sampling": "first ICU per hospital admission before eligibility; among eligible admissions choose lowest SHA256('6201:'+stay_id), then stay_id; never interpret identifiers as chronology",
+    "age": "MIMIC anchor_age + ICU year - anchor_year, capped at 90; eICU >89 maps to 90; all ages capped at 90",
+    "sex": "female=1 male=0 otherwise missing; no gender-based cohort exclusion",
+    "labs": {"creatinine": [50912, "creatinine", "mg/dL"], "glucose": [50931, "glucose", "mg/dL"], "potassium": [50971, "potassium", "mmol/L"], "sodium": [50983, "sodium", "mmol/L"], "bicarbonate": [50882, "bicarbonate", "mmol/L"], "hemoglobin": [51222, "Hgb", "g/dL"], "platelets": [51265, "platelets x 1000", "10^3/uL"], "wbc": [51301, "WBC x 1000", "10^3/uL"]},
+    "lab_selection": "median of unique finite positive values measured in [0,24h], with nonmissing availability time also in [0,24h]; unit whitelist only; unknown unit excluded and counted; no outcome-dependent clipping",
+    "mimic_join": "subject_id and selected ICU interval; accept missing hadm_id when time matches, otherwise require matching hadm_id",
+    "unit_aliases": {"mg/dL": ["mg/dl"], "mmol/L": ["mmol/l", "meq/l"], "g/dL": ["g/dl"], "10^3/uL": ["k/ul", "k/mcl", "10^3/ul", "10^3/uL", "10^3/µl"]},
+    "features": ["age", "female", "creatinine", "glucose", "potassium", "sodium", "bicarbonate", "hemoglobin", "platelets", "wbc"],
+    "development": "MIMIC-IV 3.1 patient-disjoint 60/20/20 splits, three seeds; stratified by outcome",
+    "external": "eICU-CRD 2.0; never used for model, hyperparameter, feature or calibration selection",
+    "primary_metric": "external Brier loss, hospital-cluster bootstrap percentile 95% CI for seed6201; patient bootstrap sensitivity",
+    "secondary": ["AUROC", "AUPRC", "log loss", "calibration intercept and slope", "fixed probability-bin calibration", "hospital distribution for n>=100", "age18-64/65+", "no lab versus some lab missingness"],
+    "availability_sensitivity": "apply the already selected strict model to measurement-time-only aggregates; descriptive comparison, not an admissible deployment model"
+  },
+  "nhanes": {
+    "target": "measured LBXGH HbA1c (%) in adults >=18 with observed outcome",
+    "development": "2013-14 and 2015-16 combined; participant-disjoint 60/20/20 splits stratified by cycle; seeds6201/6202/6203",
+    "external": "2017-18, not used in development or calibration; no repeat participants assumed across NHANES cross sections",
+    "features": ["age", "female", "bmi", "waist_cm", "income_poverty_ratio"],
+    "primary_metric": "external RMSE, paired participant bootstrap percentile95% CI at seed6201, conditional empirical cohort inference",
+    "secondary": ["MAE", "age18-64/65+", "missingness", "MEC-weighted RMSE and MAE as descriptive summaries only, no national population inference"]
+  },
+  "models": {
+    "preprocessing": "training medians, all-feature missing indicators, training StandardScaler; saved complete pipeline; no test refit",
+    "constant": "training prevalence or mean, one parameter-free baseline",
+    "linear": "9 regularization candidates: logspace(-4,4,9), inverse penalty C for logistic; alpha for Ridge",
+    "hgb": "9 candidates Cartesian learning_rate .03/.1/.2 by leaves7/15/31; max_iter150, l2_regularization1, early_stoppingFalse",
+    "gate": "new additive logistic-gate basis, not reproduction of published LGO GP; unique training quantiles .2/.5/.8 for nonbinary features; raw standardized binary features and missing indicators as linear terms; 3 slopes .5/1/2 by regularization .1/1/10; logistic link for mortality, identity for HbA1c",
+    "gate_ablation": "single gate at training median per continuous feature, same9 slope/regularization candidates",
+    "selection": "minimum validation Brier or RMSE; lexicographic candidate order resolves ties; fit training only, keep selected fit, no calibration or train+validation refit",
+    "information_budget": "same data, split, features, imputation,9 validation candidates per tunable family; matched candidate count not matched compute or capacity"
+  },
+  "audit": {
+    "truth_separation": "auditor sees artifacts, declared claim scope, registered reference and unlabeled probes only; fault type and expected outcome held by scoring harness",
+    "arms": ["B0 schema only", "B1 conventional independent artifact integrity + numerical replay + scope checks", "B2 component checks without cross-artifact dependency binding", "Full", "Full minus scope", "Full minus transform", "Full minus replay", "Full minus dependency"],
+    "challenges": "clean and semantic-preserving term reorder/comment changes; scope-only mismatch; gate-coordinate mismatch; coefficient mismatch; stale model paired with newer reference; out-of-probe functional perturbation; metadata forgery that leaves numeric predictions identical; deterministic fixed grid of magnitudes .05/.2/1 and 10 probe seeds",
+    "interpretation": "finite software fault challenge; report per-family rates, benign retention and runtime; no sensitivity to all real-world faults; strong B1 may match Full; hash is content binding, not a trusted external signature",
+    "prediction_control": "same predictor with and without audit must have identical clean predictions; report this zero increment explicitly; restoration only from retained reference artifacts, never labels"
+  },
+  "ontology": "inspect final system lineage and prepare genuinely new concept split; do not call old cache rescoring a third independent experiment; if resource cost exceeds scope, prioritize these two complete externally validated applications"
+}

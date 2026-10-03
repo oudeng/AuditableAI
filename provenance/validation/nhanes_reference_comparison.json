@@ -1,0 +1,39 @@
+{
+  "application": "nhanes",
+  "status": "PASS",
+  "absolute_tolerance": 1e-09,
+  "relative_tolerance": 0,
+  "selected_configurations": "exactly matched",
+  "exclusions": [
+    "timings",
+    "timestamps",
+    "source hashes after porting",
+    "pickle bytes"
+  ],
+  "checks": {
+    "task": {
+      "numeric_values": 0,
+      "max_absolute_difference": 0.0
+    },
+    "protocol_sha256": {
+      "numeric_values": 0,
+      "max_absolute_difference": 0.0
+    },
+    "metrics": {
+      "numeric_values": 120,
+      "max_absolute_difference": 4.629630012686903e-14
+    },
+    "seeds": {
+      "numeric_values": 144,
+      "max_absolute_difference": 6.483702463810914e-14
+    },
+    "inference": {
+      "numeric_values": 0,
+      "max_absolute_difference": 0.0
+    },
+    "audit_counts": {
+      "numeric_values": 160,
+      "max_absolute_difference": 0.0
+    }
+  }
+}

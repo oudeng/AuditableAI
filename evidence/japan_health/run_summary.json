@@ -1,0 +1,63 @@
+{
+  "completed_utc": "2026-09-15T17:24:01.018870+00:00",
+  "training_strata": 3290,
+  "test_strata": 1316,
+  "test_prefecture_sex_years": 188,
+  "gate_export_max_abs_error": 1.1102230246251565e-16,
+  "primary_metrics": [
+    {
+      "evaluation": "temporal",
+      "model": "gam",
+      "year": "pooled",
+      "n": 188,
+      "mae_pp": 0.7071851241830742,
+      "rmse_pp": 0.8053794856307238,
+      "bias_pp": 0.7065462276514771
+    },
+    {
+      "evaluation": "temporal",
+      "model": "gate",
+      "year": "pooled",
+      "n": 188,
+      "mae_pp": 0.7017758854343709,
+      "rmse_pp": 0.7989635443012778,
+      "bias_pp": 0.7010865983998602
+    },
+    {
+      "evaluation": "temporal",
+      "model": "hgb",
+      "year": "pooled",
+      "n": 188,
+      "mae_pp": 0.743725427581783,
+      "rmse_pp": 0.828560257676985,
+      "bias_pp": 0.743725427581783
+    },
+    {
+      "evaluation": "temporal",
+      "model": "linear",
+      "year": "pooled",
+      "n": 188,
+      "mae_pp": 0.7175302674233143,
+      "rmse_pp": 0.7906164041675597,
+      "bias_pp": 0.7175302674233143
+    },
+    {
+      "evaluation": "temporal",
+      "model": "persistence",
+      "year": "pooled",
+      "n": 188,
+      "mae_pp": 0.21979608867559206,
+      "rmse_pp": 0.2861527037086382,
+      "bias_pp": 0.15492147164365297
+    },
+    {
+      "evaluation": "temporal",
+      "model": "trend",
+      "year": "pooled",
+      "n": 188,
+      "mae_pp": 0.1908137575301475,
+      "rmse_pp": 0.2551487776184431,
+      "bias_pp": 0.10443391680550776
+    }
+  ]
+}

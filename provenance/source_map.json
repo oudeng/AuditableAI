@@ -1,0 +1,359 @@
+[
+  {
+    "source": "Thesis_workspace/08_code/src/thesis_audit/plotting.py",
+    "source_sha256": "98054583da77736539924c807dd83779a9a827d1b771d80354224f9b2cf108ce",
+    "destination": "src/auditableai/plotting.py",
+    "packaged_sha256": "98054583da77736539924c807dd83779a9a827d1b771d80354224f9b2cf108ce",
+    "change": "Unchanged source content"
+  },
+  {
+    "source": "Thesis_workspace/08_code/experiments/phase4b/models.py",
+    "source_sha256": "5ad9061cee9d6ff2723988a7d17f6b10dd5e204713b3169c1799154d7f9d7fe7",
+    "destination": "src/auditableai/models.py",
+    "packaged_sha256": "5ad9061cee9d6ff2723988a7d17f6b10dd5e204713b3169c1799154d7f9d7fe7",
+    "change": "Unchanged source content"
+  },
+  {
+    "source": "Thesis_workspace/08_code/experiments/integration/claim_runtime.py",
+    "source_sha256": "bddc04ac6f74630dbbe63088167da79b38d56e03356a40001ef408f1aef56faa",
+    "destination": "src/auditableai/records.py",
+    "packaged_sha256": "5292b8d15515ef16465ec292e755f1bd35e2fd979e6a059baebeaa3b4a8197c4",
+    "change": "Retain seven-field dataclass and fingerprint; omit superseded pilot-only numerical checker"
+  },
+  {
+    "source": "Thesis_workspace/08_code/experiments/phase4b/audit_challenges.py",
+    "source_sha256": "300663e0e97ad8880bedcdd7d66179ce7772a9d26224f375927638c6aba40c78",
+    "destination": "src/auditableai/audit.py",
+    "packaged_sha256": "3888d2140038e57878a66ab7f2049dad09a8a3e42fdfa00ddaf5e1feff9bd75e",
+    "change": "Extract the original finite-benchmark checker and fault constructors; numerical rules unchanged"
+  },
+  {
+    "source": "Thesis_workspace/08_code/experiments/phase4b/run_formal.py",
+    "source_sha256": "638ececdc9f18976b2dd3b529cfdabdfc96007ce7a5bed6f2437c570b12d1b10",
+    "destination": "experiments/phase4b/run_formal.py",
+    "packaged_sha256": "62f7f8de999c0fbfd346ed75bb4ea016bf68eb01d088ad453ff589fca05e92fd",
+    "change": "Portable working/data paths; shared models; preserve selection, extraction and inferential rules"
+  },
+  {
+    "source": "Thesis_workspace/08_code/experiments/phase4b/extract_clinical.py",
+    "source_sha256": "271acef8bf8ad1917ef2cf8f7a065866047b3f348e17794da48b4f0cb52015f5",
+    "destination": "experiments/phase4b/extract_clinical.py",
+    "packaged_sha256": "06261f25e7ef0c70d9b3d6656868ab2255252d05528a06f70482b1232d72318f",
+    "change": "Portable working/data paths; shared models; preserve selection, extraction and inferential rules"
+  },
+  {
+    "source": "Thesis_workspace/08_code/experiments/phase4b/verify_results.py",
+    "source_sha256": "168f5b8d370b2a1ae476e21cda92919bcc0adb30b9a5c1ad141e8885f2fbdb92",
+    "destination": "experiments/phase4b/verify_results.py",
+    "packaged_sha256": "bb68326fd8267a5824de0a8694ec91a51e7fba630aa48a6ab85613c7f620807b",
+    "change": "Portable working/data paths; shared models; preserve selection, extraction and inferential rules"
+  },
+  {
+    "source": "Thesis_workspace/08_code/experiments/phase4b/audit_challenges.py",
+    "source_sha256": "300663e0e97ad8880bedcdd7d66179ce7772a9d26224f375927638c6aba40c78",
+    "destination": "experiments/phase4b/audit_challenges.py",
+    "packaged_sha256": "b9c43532673344dcb9ca506799870c91ec3a5db6421c6ac2a4217331085f0640",
+    "change": "Use shared unchanged checker; record both runner and checker identities"
+  },
+  {
+    "source": "Thesis_workspace/08_code/experiments/phase4b/protocol.json",
+    "source_sha256": "8abde3b49c137c1944769e20935fb1676e02a373134ad22af440bd3145e1fc71",
+    "destination": "experiments/phase4b/protocol.json",
+    "packaged_sha256": "8abde3b49c137c1944769e20935fb1676e02a373134ad22af440bd3145e1fc71",
+    "change": "Unchanged source content"
+  },
+  {
+    "source": "Thesis_workspace/08_code/experiments/japan_health/prepare_data.py",
+    "source_sha256": "5f8530110c48cbdcab6cb24f98e54e5ca15017976a70576a5c76880ce3102e32",
+    "destination": "experiments/japan_health/prepare_data.py",
+    "packaged_sha256": "9fa4684bb45ab2c0d48e2d9663bf8611049e3c781258f7c1b6e18fcb0e0f8ab6",
+    "change": "Portable paths and explicit reproduction-run provenance; original calculations retained"
+  },
+  {
+    "source": "Thesis_workspace/08_code/experiments/japan_health/run_formal.py",
+    "source_sha256": "bc8522dc1b7eb134541db176bce813a05ca075526cd159c12bf05d50bb7c3024",
+    "destination": "experiments/japan_health/run_formal.py",
+    "packaged_sha256": "499422b3c2cd21f3980782dd8837477f1e3488e4dc62acec650ee1d6ced2addd",
+    "change": "Portable paths and explicit reproduction-run provenance; original calculations retained"
+  },
+  {
+    "source": "Thesis_workspace/08_code/experiments/japan_health/verify_and_package.py",
+    "source_sha256": "07effb07669abb8c2f7ec0aaf22c829102f13f8abd17009c3d056bdc75718f3f",
+    "destination": "experiments/japan_health/verify_and_package.py",
+    "packaged_sha256": "aef2b5be83f57aa204755890d08e09dfa7be3645df4fdc5d73c0c85cfab7e653",
+    "change": "Portable paths and explicit reproduction-run provenance; original calculations retained"
+  },
+  {
+    "source": "Thesis_workspace/08_code/experiments/japan_health/diagnose_review1.py",
+    "source_sha256": "cf5df9a3475439b00f5d1ed85f08b0469d65024a0fddde99f29ceded48639fa1",
+    "destination": "experiments/japan_health/diagnose_review1.py",
+    "packaged_sha256": "bc6938ee6cac4d86b96f57166a2c59eea71bec55877b4f4880d8a342758832e2",
+    "change": "Portable paths and explicit reproduction-run provenance; original calculations retained"
+  },
+  {
+    "source": "Thesis_workspace/08_code/experiments/japan_health/protocol.json",
+    "source_sha256": "9eb8a0e375c9d82f82a4888d5638bba5b00a3aa82b9a5a69e9b5a3e513b0dde7",
+    "destination": "experiments/japan_health/protocol.json",
+    "packaged_sha256": "9eb8a0e375c9d82f82a4888d5638bba5b00a3aa82b9a5a69e9b5a3e513b0dde7",
+    "change": "Unchanged source content"
+  },
+  {
+    "source": "Thesis_workspace/08_code/experiments/japan_health/environment_local.txt",
+    "source_sha256": "b47acc77803453d4b514b9f976c243d95781415856ff62c8c170572228690dfa",
+    "destination": "environments/original-japan-python312.txt",
+    "packaged_sha256": "b47acc77803453d4b514b9f976c243d95781415856ff62c8c170572228690dfa",
+    "change": "Unchanged source content"
+  },
+  {
+    "source": "Thesis_workspace/08_code/experiments/phase4c/run_examples.py",
+    "source_sha256": "49308174d5ff1704a7ee2dd6294a71951ce35c09479022b6360497e99f70ac20",
+    "destination": "experiments/phase4c/run_examples.py",
+    "packaged_sha256": "bd843fc771e19145d4fb1a1c45028df3e60e82a8d5406d8dcb581a89f4bf99d9",
+    "change": "Portable working directory; retain fixed-model explanatory comparisons"
+  },
+  {
+    "source": "Thesis_workspace/08_code/experiments/phase4c/example_protocol.json",
+    "source_sha256": "3a06d9e4c77ef124d957d514ecb70d4346dff71801f5ebe627635f66be941165",
+    "destination": "experiments/phase4c/example_protocol.json",
+    "packaged_sha256": "2aa21a883f3397e1f0f6012882d17e42b194f4be621a44a9328edf8625df8dc7",
+    "change": "Replace private host name with local working-directory policy"
+  },
+  {
+    "source": "Thesis_workspace/01_evidence/integration/phase4b/clinical_formal_v1/summary.json",
+    "source_sha256": "0405b58f1ca2d34451139548b684bb8f07b1bdc858abd358fde60f3c7a4ef4be",
+    "destination": "evidence/phase4b/clinical_formal_v1/summary.json",
+    "packaged_sha256": "440e345698c9d02d3af6d5fefe25d67adf7e32827ed33939b84c61e2d4521cc9",
+    "change": "Public aggregate view; omit source paths, hospital identifiers and private artifact inventories where present"
+  },
+  {
+    "source": "Thesis_workspace/01_evidence/integration/phase4b/clinical_verification.json",
+    "source_sha256": "03f2d1e04606d90b06a2fb5394a11951354f361e4ef729f1b2f6ec1e7246935e",
+    "destination": "evidence/phase4b/clinical_verification.json",
+    "packaged_sha256": "1ad145330563c92712ae943db0c73d8c7acdccb4646beacbfe7e4a90a2011dc1",
+    "change": "Public aggregate view; omit source paths, hospital identifiers and private artifact inventories where present"
+  },
+  {
+    "source": "Thesis_workspace/01_evidence/integration/phase4b/clinical_formal_v1/audit_v1/summary.json",
+    "source_sha256": "e7d19998d70a5bcab035b449e7f379c0e041a1eb4f3e39e0fb760e08632e76aa",
+    "destination": "evidence/phase4b/clinical_formal_v1/audit_v1/summary.json",
+    "packaged_sha256": "e7d19998d70a5bcab035b449e7f379c0e041a1eb4f3e39e0fb760e08632e76aa",
+    "change": "Unchanged source content"
+  },
+  {
+    "source": "Thesis_workspace/01_evidence/integration/phase4b/nhanes_formal_v1/summary.json",
+    "source_sha256": "a53c10db30b4530acc1ee41c9672824b5209b42fc5f597e56200996e29973718",
+    "destination": "evidence/phase4b/nhanes_formal_v1/summary.json",
+    "packaged_sha256": "72f94ac2757f61520a36ea176f47557c59658782118246949a262e31e4913d72",
+    "change": "Public aggregate view; omit source paths, hospital identifiers and private artifact inventories where present"
+  },
+  {
+    "source": "Thesis_workspace/01_evidence/integration/phase4b/nhanes_verification.json",
+    "source_sha256": "0dfba5f1937893a580551af8a0a29ff9210551033d935fca4c7527a9c1fa4e0b",
+    "destination": "evidence/phase4b/nhanes_verification.json",
+    "packaged_sha256": "d4629b6734b5aa43776031336dd7e0878abc9086662b12096b0f68e325cdf9cd",
+    "change": "Public aggregate view; omit source paths, hospital identifiers and private artifact inventories where present"
+  },
+  {
+    "source": "Thesis_workspace/01_evidence/integration/phase4b/nhanes_formal_v1/audit_v1/summary.json",
+    "source_sha256": "905fb16608ba262c93fc4595f37e749e8ed0a1b40f35865d5a766647e74c49ce",
+    "destination": "evidence/phase4b/nhanes_formal_v1/audit_v1/summary.json",
+    "packaged_sha256": "905fb16608ba262c93fc4595f37e749e8ed0a1b40f35865d5a766647e74c49ce",
+    "change": "Unchanged source content"
+  },
+  {
+    "source": "Thesis_workspace/01_evidence/integration/phase4b/mimic_flow.json",
+    "source_sha256": "052a7a944503bc866444cd4681301e49c7b6893d3e1db96de9ef8d349cbc46b2",
+    "destination": "evidence/phase4b/mimic_flow.json",
+    "packaged_sha256": "4b0da21d2bb5986d9d4eb1ad049d91ff474125b16ed9e6b2f6b0156255234847",
+    "change": "Public aggregate view; omit source paths, hospital identifiers and private artifact inventories where present"
+  },
+  {
+    "source": "Thesis_workspace/01_evidence/integration/phase4b/eicu_flow.json",
+    "source_sha256": "89f46921700291a7944ae6c43c32a586b91ce80b99a9806f7d0d23347f3aa2ca",
+    "destination": "evidence/phase4b/eicu_flow.json",
+    "packaged_sha256": "cd88133cb56fb4c86534ec3206413afabe9d852db22ec4aee442e9a2956983ce",
+    "change": "Public aggregate view; omit source paths, hospital identifiers and private artifact inventories where present"
+  },
+  {
+    "source": "Thesis_workspace/01_evidence/integration/phase4b/nhanes_formal_v1/export_6201.json",
+    "source_sha256": "85fe1630afd0637f9029bab350002e17b370c5a038bcf5f80169ce8fd73a5ee5",
+    "destination": "evidence/phase4b/nhanes_formal_v1/export_6201.json",
+    "packaged_sha256": "85fe1630afd0637f9029bab350002e17b370c5a038bcf5f80169ce8fd73a5ee5",
+    "change": "Unchanged source content"
+  },
+  {
+    "source": "Thesis_workspace/01_evidence/integration/phase4c/summary.json",
+    "source_sha256": "8c332bdbbddf2682fe97444375484cd491975f465247c238ff01e2933ee550d3",
+    "destination": "evidence/phase4c/summary.json",
+    "packaged_sha256": "a86bbc02c07abd83b44b42c211ad2ce6bfa6743a00c8dde13004d4d694f114e3",
+    "change": "Public aggregate view; omit source paths, hospital identifiers and private artifact inventories where present"
+  },
+  {
+    "source": "Thesis_workspace/01_evidence/integration/japan_health/formal_v1/metrics.csv",
+    "source_sha256": "2b6c1fa43c0ec7b9a6fb912fa997d575a03b38703561a89498d73a3fb68edfbc",
+    "destination": "evidence/japan_health/metrics.csv",
+    "packaged_sha256": "2b6c1fa43c0ec7b9a6fb912fa997d575a03b38703561a89498d73a3fb68edfbc",
+    "change": "Unchanged source content"
+  },
+  {
+    "source": "Thesis_workspace/01_evidence/integration/japan_health/formal_v1/paired_intervals.json",
+    "source_sha256": "6c9e6bfafc1a560494d88865e38e90acfd50b12302a18815fc34433e97c1d5ab",
+    "destination": "evidence/japan_health/paired_intervals.json",
+    "packaged_sha256": "6c9e6bfafc1a560494d88865e38e90acfd50b12302a18815fc34433e97c1d5ab",
+    "change": "Unchanged source content"
+  },
+  {
+    "source": "Thesis_workspace/01_evidence/integration/japan_health/formal_v1/run_summary.json",
+    "source_sha256": "75f76c6623598485aeab0532927156add6528cfe1a36b5e322ac5a905910e78c",
+    "destination": "evidence/japan_health/run_summary.json",
+    "packaged_sha256": "75f76c6623598485aeab0532927156add6528cfe1a36b5e322ac5a905910e78c",
+    "change": "Unchanged source content"
+  },
+  {
+    "source": "Thesis_workspace/01_evidence/integration/japan_health/formal_v1/reproduction_tasks.json",
+    "source_sha256": "1dfc61f0480a845fd13f03dd27df32d4e5134e2ab24eaac444d40f89641b0bf5",
+    "destination": "evidence/japan_health/reproduction_tasks.json",
+    "packaged_sha256": "1dfc61f0480a845fd13f03dd27df32d4e5134e2ab24eaac444d40f89641b0bf5",
+    "change": "Unchanged source content"
+  },
+  {
+    "source": "Thesis_workspace/01_evidence/integration/japan_health/review1_v1/yearly_model_metrics.csv",
+    "source_sha256": "7b5daa97d7998cb58b603e054e2c9845afca8153aebbef989a8e0cf384afc41d",
+    "destination": "evidence/japan_health/yearly_model_metrics.csv",
+    "packaged_sha256": "7b5daa97d7998cb58b603e054e2c9845afca8153aebbef989a8e0cf384afc41d",
+    "change": "Unchanged source content"
+  },
+  {
+    "source": "Thesis_workspace/01_evidence/integration/japan_health/review1_v1/gate_yearly_decomposition.csv",
+    "source_sha256": "580ff1a0f222210856b1c06e4dd47c68599cd63040af7ad33e786ec9e8123dcc",
+    "destination": "evidence/japan_health/gate_yearly_decomposition.csv",
+    "packaged_sha256": "580ff1a0f222210856b1c06e4dd47c68599cd63040af7ad33e786ec9e8123dcc",
+    "change": "Unchanged source content"
+  },
+  {
+    "source": "Thesis_workspace/01_evidence/integration/japan_health/review1_v1/delta_gate_activity.csv",
+    "source_sha256": "8341155428a830a4483186775eeb3e425c2182fafd282038dc580408dbce2d56",
+    "destination": "evidence/japan_health/delta_gate_activity.csv",
+    "packaged_sha256": "8341155428a830a4483186775eeb3e425c2182fafd282038dc580408dbce2d56",
+    "change": "Unchanged source content"
+  },
+  {
+    "source": "Thesis_workspace/01_evidence/integration/japan_health/review1_v1/diagnostic_summary.json",
+    "source_sha256": "042e598aa6427a2752224a1ff5c2b05503047ab0243b91ea7c8a7e0a77134c2c",
+    "destination": "evidence/japan_health/diagnostic_summary.json",
+    "packaged_sha256": "a1c6aaf73666c9babcb3fb6b2c1ef2f0945efaf8ad3546cf0ee54059d8f22334",
+    "change": "Public aggregate view; omit source paths, hospital identifiers and private artifact inventories where present"
+  },
+  {
+    "source": "Code/VERA-main/evidence/t_final.json",
+    "source_sha256": "fc262297547abcf793b5de9dbf525f81ae16a3d60a6c808c71ba0072894dac4c",
+    "destination": "evidence/papers/vera/t_final.json",
+    "packaged_sha256": "fc262297547abcf793b5de9dbf525f81ae16a3d60a6c808c71ba0072894dac4c",
+    "change": "Unchanged source content"
+  },
+  {
+    "source": "Code/VERA-main/evidence/fair_same_host_recovery_cells.csv",
+    "source_sha256": "a40f335c5e585394bfc6fd20f65e90e1e862ea43da7639ebff3ee41cd91b46b3",
+    "destination": "evidence/papers/vera/fair_same_host_recovery_cells.csv",
+    "packaged_sha256": "a40f335c5e585394bfc6fd20f65e90e1e862ea43da7639ebff3ee41cd91b46b3",
+    "change": "Unchanged source content"
+  },
+  {
+    "source": "Thesis_workspace/01_evidence/server_sources/CaST/2026-09-15/snapshot/rewrite_package/data/main_tables/table3_main.csv",
+    "source_sha256": "db37b7c06e6b92f48d88acd0205a2b3020025936ac7ec5893496d76877b190b3",
+    "destination": "evidence/papers/cast/table3_main.csv",
+    "packaged_sha256": "db37b7c06e6b92f48d88acd0205a2b3020025936ac7ec5893496d76877b190b3",
+    "change": "Unchanged source content"
+  },
+  {
+    "source": "Thesis_workspace/01_evidence/server_sources/CaST/2026-09-15/snapshot/reports/phase17/final_system_freeze.csv",
+    "source_sha256": "709b589a6413d05ba63a09b96d0bfbaadcea321e38b90b0015a7c13042637e52",
+    "destination": "evidence/papers/cast/final_system_freeze.csv",
+    "packaged_sha256": "709b589a6413d05ba63a09b96d0bfbaadcea321e38b90b0015a7c13042637e52",
+    "change": "Unchanged source content"
+  },
+  {
+    "source": "Thesis_workspace/08_code/figures/framework_integrated.py",
+    "source_sha256": "ddfb5672b33f1a34996aac3842d8ae86e7b6b7f9163b9cc7f33673847ebc716c",
+    "destination": "figures/framework_integrated.py",
+    "packaged_sha256": "74319f0744c2dbef1c66aa42d10e2371dbdff26c162a7e2b4b6b848829363d4c",
+    "change": "Original plotting/analysis logic with portable paths and packaged aggregate inputs; no thesis source tree required"
+  },
+  {
+    "source": "Thesis_workspace/08_code/figures/integration_mechanisms.py",
+    "source_sha256": "e55640d98f60bf454552f59e4d90cb1e3170aaf15c8ef5ecd8bc131d9ac97b7f",
+    "destination": "figures/integration_mechanisms.py",
+    "packaged_sha256": "47b6af106e1f264d41d108c10fee7530d0d6a068499867de3f128ceed725a32f",
+    "change": "Original plotting/analysis logic with portable paths and packaged aggregate inputs; no thesis source tree required"
+  },
+  {
+    "source": "Thesis_workspace/08_code/figures/ch04_ch05.py",
+    "source_sha256": "b78561a5c30379ced4fcba45639a53d8dc305ec0412afe2dea7c8a90a472c4ef",
+    "destination": "figures/ch04_ch05.py",
+    "packaged_sha256": "a2847f2dd6c670087f93d85a1fc3747a6f0a0bb396734f795f11a274c3dd6397",
+    "change": "Original plotting/analysis logic with portable paths and packaged aggregate inputs; no thesis source tree required"
+  },
+  {
+    "source": "Thesis_workspace/08_code/figures/ch06_ch07.py",
+    "source_sha256": "ee34299f0b5c67fcfe239149681737e68bf18d7fbd1f09b4e71f0ae20d7d8cd0",
+    "destination": "figures/ch06_ch07.py",
+    "packaged_sha256": "aac2b2a13bebce830c1592cc59878fef3ff41711fd23adc8aef118be23831c43",
+    "change": "Original plotting/analysis logic with portable paths and packaged aggregate inputs; no thesis source tree required"
+  },
+  {
+    "source": "Thesis_workspace/08_code/figures/phase4b_results.py",
+    "source_sha256": "68ce00ff495055e9847e40b4e2339ab919786aea6b6325b08aab63167dfb31a4",
+    "destination": "figures/phase4b_results.py",
+    "packaged_sha256": "32215e56798c108fdc9eee4b6ca7e3842defb0f8c134aa8bdda26165ca7f564c",
+    "change": "Original plotting/analysis logic with portable paths and packaged aggregate inputs; no thesis source tree required"
+  },
+  {
+    "source": "Thesis_workspace/08_code/figures/phase4c_examples.py",
+    "source_sha256": "2dbc65b0ff54a8a7d383ba1593feca5ee8f460f25c08c417fc874e66ef66686e",
+    "destination": "figures/phase4c_examples.py",
+    "packaged_sha256": "fd509a438580c6d2f4a68c0cfc29a2d473dd72b477cedefe0c5646543b706817",
+    "change": "Original plotting/analysis logic with portable paths and packaged aggregate inputs; no thesis source tree required"
+  },
+  {
+    "source": "Thesis_workspace/08_code/figures/audit_mechanism_table.py",
+    "source_sha256": "b9a0785054edda90523737cfaab8d9a9a55d541e0050bd12c1fdc2c9dd10035a",
+    "destination": "figures/audit_mechanism_table.py",
+    "packaged_sha256": "88e5cac3427bfd5591aff98fbf734dab2da38231a588ba8fe4c4dc05e3f6b8dd",
+    "change": "Original plotting/analysis logic with portable paths and packaged aggregate inputs; no thesis source tree required"
+  },
+  {
+    "source": "Thesis_workspace/08_code/figures/japan_health.py",
+    "source_sha256": "293b672f278c1dbbb9c32dff3802da3564b943854c85fedc9c64e71238c47ea6",
+    "destination": "figures/japan_health.py",
+    "packaged_sha256": "4e740c4f51910110a8266b775debfe123297d996210bd4f05627e5432c5f0f1d",
+    "change": "Original plotting/analysis logic with portable paths and packaged aggregate inputs; no thesis source tree required"
+  },
+  {
+    "source": "Thesis_workspace/08_code/figures/japan_review1.py",
+    "source_sha256": "ec9040ac64c8c74827b47a9d7d21ed80483ebf1ed354b870a9691c54bc981b05",
+    "destination": "figures/japan_review1.py",
+    "packaged_sha256": "2503195f8b18cddc0a39b228688d7165aee8a50f58d5f7c93ccef4bcbb0068d3",
+    "change": "Original plotting/analysis logic with portable paths and packaged aggregate inputs; no thesis source tree required"
+  },
+  {
+    "source": "Thesis_workspace/08_code/experiments/phase4b/test_models.py",
+    "source_sha256": "f24ada5e418ee390ee4b929593bb05532bac708abb6a276668463631873fbc0e",
+    "destination": "tests/test_models.py",
+    "packaged_sha256": "41b66f927fc50f6a3493ab1d25fd8a8dc79a046eb3049749a75c0b6217cbb509",
+    "change": "Retained scientific invariants; import shared implementation"
+  },
+  {
+    "source": "Thesis_workspace/01_evidence/integration/japan_health/formal_v1/selection.json",
+    "source_sha256": "ceb7c4aa22beb48e27d84fc289d091a9a3f427636f7c3fa903e981ff4dcdf6a7",
+    "destination": "evidence/japan_health/selection.json",
+    "packaged_sha256": "ceb7c4aa22beb48e27d84fc289d091a9a3f427636f7c3fa903e981ff4dcdf6a7",
+    "change": "Unchanged aggregate candidate-selection scores; no source panel or individual records"
+  },
+  {
+    "source": "Thesis_workspace/01_evidence/integration/japan_health/formal_v1/spatial_selection.json",
+    "source_sha256": "e37bb8aad4ed277458f6d72b9bad01b6d04645f3ac19ccd9a8736a1715286abf",
+    "destination": "evidence/japan_health/spatial_selection.json",
+    "packaged_sha256": "e37bb8aad4ed277458f6d72b9bad01b6d04645f3ac19ccd9a8736a1715286abf",
+    "change": "Unchanged aggregate candidate-selection scores; no source panel or individual records"
+  }
+]

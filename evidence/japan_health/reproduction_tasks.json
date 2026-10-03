@@ -1,0 +1,82 @@
+{
+  "tasks": [
+    {
+      "route": "B1",
+      "task": "T1",
+      "passed": true,
+      "max_abs_discrepancy": 0.0
+    },
+    {
+      "route": "B1",
+      "task": "T2",
+      "passed": true,
+      "max_abs_discrepancy": 0.0
+    },
+    {
+      "route": "B1",
+      "task": "T3",
+      "passed": true,
+      "max_abs_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "route": "B1",
+      "task": "T4",
+      "passed": true,
+      "max_abs_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "route": "B1",
+      "task": "T5",
+      "passed": true,
+      "max_abs_discrepancy": 0.0
+    },
+    {
+      "route": "B1",
+      "task": "T6",
+      "passed": true,
+      "max_abs_discrepancy": 0.0
+    },
+    {
+      "route": "Full",
+      "task": "T1",
+      "passed": true,
+      "max_abs_discrepancy": 0.0
+    },
+    {
+      "route": "Full",
+      "task": "T2",
+      "passed": true,
+      "max_abs_discrepancy": 0.0
+    },
+    {
+      "route": "Full",
+      "task": "T3",
+      "passed": true,
+      "max_abs_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "route": "Full",
+      "task": "T4",
+      "passed": true,
+      "max_abs_discrepancy": 1.1102230246251565e-16
+    },
+    {
+      "route": "Full",
+      "task": "T5",
+      "passed": true,
+      "max_abs_discrepancy": 0.0
+    },
+    {
+      "route": "Full",
+      "task": "T6",
+      "passed": true,
+      "max_abs_discrepancy": 0.0
+    }
+  ],
+  "interpretation": "Both scripted routes have complete access and pass. No incremental success advantage, human completion-time evidence, or real-world failure rate is claimed. Source parsing and package creation are excluded from the lookup timing.",
+  "warm_lookup_seconds_188_records": {
+    "B1": 0.0628804930311162,
+    "Full": 0.0007261120772454888
+  },
+  "timing_design": "One deterministic lookup batch on this host, not randomized or repeated; diagnostic only, not a comparative performance claim."
+}

@@ -1,0 +1,17 @@
+system,edge_holdout_HPO,edge_holdout_DO,edge_holdout_GO,inductive_HPO,inductive_DO,inductive_GO,inductive_L-sub,inductive_L-part,inductive_L-zero,value,n_positive,holm_reject
+popularity,0.0356,0.3242,0.0565,0.036,0.3242,0.0572,0.1632,0.0775,0.1362,,,
+bm25,0.4223,0.3725,0.3684,0.429,0.3704,0.363,0.6086,0.4726,0.0387,,,
+dense,0.5464,0.4095,0.4326,0.5505,0.4125,0.4259,0.6166,0.5531,0.1703,,,
+structure,0.2906,0.3503,0.2519,0.284,0.3457,0.2529,0.2947,0.259,0.2915,,,
+bm25_dense,0.5927,0.4801,0.466,0.5984,0.4832,0.4589,0.7095,0.6323,0.1472,,,
+knn_parent_vote,0.6187,0.7633,0.5338,0.6152,0.764,0.5345,0.7142,0.648,0.5116,,,
+traverse,0.6244,0.7487,0.5133,0.6285,0.7538,0.5182,0.7305,0.657,0.47,,,
+cast2,0.6554,0.5714,0.5468,0.6438,0.5656,0.5347,0.7046,0.664,0.3124,,,
+cast3,0.715,0.652,0.6196,0.7017,0.6369,0.6136,0.8247,0.7417,0.3237,,,
+cast5,0.774,0.8277,0.7168,0.7574,0.8263,0.7189,0.9084,0.8238,0.5164,,,
+cast_final_minus_cast3_inductive_HPO,,,,,,,,,,0.0557,5.0,5.0
+cast_final_minus_cast3_inductive_DO,,,,,,,,,,0.1894,5.0,5.0
+cast_final_minus_cast3_inductive_GO,,,,,,,,,,0.1053,5.0,5.0
+cast_final_minus_cast3_edge_holdout_HPO,,,,,,,,,,0.059,5.0,5.0
+cast_final_minus_cast3_edge_holdout_DO,,,,,,,,,,0.1757,5.0,5.0
+cast_final_minus_cast3_edge_holdout_GO,,,,,,,,,,0.0971,5.0,5.0

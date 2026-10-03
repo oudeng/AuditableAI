@@ -1,0 +1,358 @@
+{
+  "task": "nhanes",
+  "verified_utc": "2026-09-15T13:23:27.847560+00:00",
+  "checks": [
+    {
+      "seed": 6201,
+      "family": "constant",
+      "external_replay_max_error": 0.0,
+      "train_only_imputer": true,
+      "selected_validation_minimum": true
+    },
+    {
+      "seed": 6201,
+      "family": "linear",
+      "external_replay_max_error": 0.0,
+      "train_only_imputer": true,
+      "selected_validation_minimum": true
+    },
+    {
+      "seed": 6201,
+      "family": "hgb",
+      "external_replay_max_error": 0.0,
+      "train_only_imputer": true,
+      "selected_validation_minimum": true
+    },
+    {
+      "seed": 6201,
+      "family": "gate",
+      "external_replay_max_error": 0.0,
+      "train_only_imputer": true,
+      "selected_validation_minimum": true
+    },
+    {
+      "seed": 6201,
+      "family": "single_gate",
+      "external_replay_max_error": 0.0,
+      "train_only_imputer": true,
+      "selected_validation_minimum": true
+    },
+    {
+      "seed": 6202,
+      "family": "constant",
+      "external_replay_max_error": 0.0,
+      "train_only_imputer": true,
+      "selected_validation_minimum": true
+    },
+    {
+      "seed": 6202,
+      "family": "linear",
+      "external_replay_max_error": 0.0,
+      "train_only_imputer": true,
+      "selected_validation_minimum": true
+    },
+    {
+      "seed": 6202,
+      "family": "hgb",
+      "external_replay_max_error": 0.0,
+      "train_only_imputer": true,
+      "selected_validation_minimum": true
+    },
+    {
+      "seed": 6202,
+      "family": "gate",
+      "external_replay_max_error": 0.0,
+      "train_only_imputer": true,
+      "selected_validation_minimum": true
+    },
+    {
+      "seed": 6202,
+      "family": "single_gate",
+      "external_replay_max_error": 0.0,
+      "train_only_imputer": true,
+      "selected_validation_minimum": true
+    },
+    {
+      "seed": 6203,
+      "family": "constant",
+      "external_replay_max_error": 0.0,
+      "train_only_imputer": true,
+      "selected_validation_minimum": true
+    },
+    {
+      "seed": 6203,
+      "family": "linear",
+      "external_replay_max_error": 0.0,
+      "train_only_imputer": true,
+      "selected_validation_minimum": true
+    },
+    {
+      "seed": 6203,
+      "family": "hgb",
+      "external_replay_max_error": 0.0,
+      "train_only_imputer": true,
+      "selected_validation_minimum": true
+    },
+    {
+      "seed": 6203,
+      "family": "gate",
+      "external_replay_max_error": 0.0,
+      "train_only_imputer": true,
+      "selected_validation_minimum": true
+    },
+    {
+      "seed": 6203,
+      "family": "single_gate",
+      "external_replay_max_error": 0.0,
+      "train_only_imputer": true,
+      "selected_validation_minimum": true
+    }
+  ],
+  "all_passed": true,
+  "patient_disjoint_splits": true,
+  "unchanged_external_replay": true,
+  "raw_run_preserved": true,
+  "analysis_note": "Constant-model joint calibration slope and intercept are not identifiable and are suppressed. This reporting correction changes no prediction, selection, primary endpoint or confidence interval.",
+  "reportable_metrics": [
+    {
+      "seed": 6201,
+      "model": "constant",
+      "split": "internal",
+      "n": 2227,
+      "rmse": 1.099568122404914,
+      "mae": 0.6403105022315226
+    },
+    {
+      "seed": 6201,
+      "model": "constant",
+      "split": "external",
+      "n": 5261,
+      "rmse": 1.0883045757696392,
+      "mae": 0.6435741106683927
+    },
+    {
+      "seed": 6201,
+      "model": "linear",
+      "split": "internal",
+      "n": 2227,
+      "rmse": 1.021355650786653,
+      "mae": 0.5598403322933297
+    },
+    {
+      "seed": 6201,
+      "model": "linear",
+      "split": "external",
+      "n": 5261,
+      "rmse": 1.0114234456644389,
+      "mae": 0.5891127534204477
+    },
+    {
+      "seed": 6201,
+      "model": "hgb",
+      "split": "internal",
+      "n": 2227,
+      "rmse": 1.008312522750554,
+      "mae": 0.5511292190074962
+    },
+    {
+      "seed": 6201,
+      "model": "hgb",
+      "split": "external",
+      "n": 5261,
+      "rmse": 1.0101045411926435,
+      "mae": 0.5839949992636715
+    },
+    {
+      "seed": 6201,
+      "model": "gate",
+      "split": "internal",
+      "n": 2227,
+      "rmse": 1.012061763697635,
+      "mae": 0.5550559308446659
+    },
+    {
+      "seed": 6201,
+      "model": "gate",
+      "split": "external",
+      "n": 5261,
+      "rmse": 1.0052599285929706,
+      "mae": 0.5888263928256546
+    },
+    {
+      "seed": 6201,
+      "model": "single_gate",
+      "split": "internal",
+      "n": 2227,
+      "rmse": 1.016157012803923,
+      "mae": 0.5580863407415496
+    },
+    {
+      "seed": 6201,
+      "model": "single_gate",
+      "split": "external",
+      "n": 5261,
+      "rmse": 1.0072790070301827,
+      "mae": 0.5876192121427748
+    },
+    {
+      "seed": 6202,
+      "model": "constant",
+      "split": "internal",
+      "n": 2227,
+      "rmse": 1.048980072721851,
+      "mae": 0.6265355361982519
+    },
+    {
+      "seed": 6202,
+      "model": "constant",
+      "split": "external",
+      "n": 5261,
+      "rmse": 1.0880376195810446,
+      "mae": 0.6448367712163604
+    },
+    {
+      "seed": 6202,
+      "model": "linear",
+      "split": "internal",
+      "n": 2227,
+      "rmse": 0.9709434432162043,
+      "mae": 0.5605940364251442
+    },
+    {
+      "seed": 6202,
+      "model": "linear",
+      "split": "external",
+      "n": 5261,
+      "rmse": 1.0100954769179622,
+      "mae": 0.5920951660348168
+    },
+    {
+      "seed": 6202,
+      "model": "hgb",
+      "split": "internal",
+      "n": 2227,
+      "rmse": 0.9641181323693934,
+      "mae": 0.5497495617600967
+    },
+    {
+      "seed": 6202,
+      "model": "hgb",
+      "split": "external",
+      "n": 5261,
+      "rmse": 1.0079199351058044,
+      "mae": 0.5876096957793587
+    },
+    {
+      "seed": 6202,
+      "model": "gate",
+      "split": "internal",
+      "n": 2227,
+      "rmse": 0.9645781687869813,
+      "mae": 0.5595412271429475
+    },
+    {
+      "seed": 6202,
+      "model": "gate",
+      "split": "external",
+      "n": 5261,
+      "rmse": 1.0035619270319946,
+      "mae": 0.5918551397090663
+    },
+    {
+      "seed": 6202,
+      "model": "single_gate",
+      "split": "internal",
+      "n": 2227,
+      "rmse": 0.9699729455853915,
+      "mae": 0.5605597352695354
+    },
+    {
+      "seed": 6202,
+      "model": "single_gate",
+      "split": "external",
+      "n": 5261,
+      "rmse": 1.009396670866262,
+      "mae": 0.5921488494785584
+    },
+    {
+      "seed": 6203,
+      "model": "constant",
+      "split": "internal",
+      "n": 2227,
+      "rmse": 1.0399568259351288,
+      "mae": 0.625512130052463
+    },
+    {
+      "seed": 6203,
+      "model": "constant",
+      "split": "external",
+      "n": 5261,
+      "rmse": 1.0882320402868038,
+      "mae": 0.6439076436433279
+    },
+    {
+      "seed": 6203,
+      "model": "linear",
+      "split": "internal",
+      "n": 2227,
+      "rmse": 0.9653533459283568,
+      "mae": 0.5572545766186475
+    },
+    {
+      "seed": 6203,
+      "model": "linear",
+      "split": "external",
+      "n": 5261,
+      "rmse": 1.0119044369780414,
+      "mae": 0.5925565583597835
+    },
+    {
+      "seed": 6203,
+      "model": "hgb",
+      "split": "internal",
+      "n": 2227,
+      "rmse": 0.9597982821886437,
+      "mae": 0.5513033155924579
+    },
+    {
+      "seed": 6203,
+      "model": "hgb",
+      "split": "external",
+      "n": 5261,
+      "rmse": 1.0075723179362845,
+      "mae": 0.5890165444555772
+    },
+    {
+      "seed": 6203,
+      "model": "gate",
+      "split": "internal",
+      "n": 2227,
+      "rmse": 0.958237216689534,
+      "mae": 0.5569246815964183
+    },
+    {
+      "seed": 6203,
+      "model": "gate",
+      "split": "external",
+      "n": 5261,
+      "rmse": 1.0055376695798874,
+      "mae": 0.5936968656404568
+    },
+    {
+      "seed": 6203,
+      "model": "single_gate",
+      "split": "internal",
+      "n": 2227,
+      "rmse": 0.9635162163402682,
+      "mae": 0.5590515693362464
+    },
+    {
+      "seed": 6203,
+      "model": "single_gate",
+      "split": "external",
+      "n": 5261,
+      "rmse": 1.0078223326057618,
+      "mae": 0.5925906637138938
+    }
+  ]
+}
